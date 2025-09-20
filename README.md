@@ -1,87 +1,56 @@
-# Todo App - BuilderSoft Task
+# Todo App
 
-A simple and elegant todo application built with React and Vite.
+A simple and clean todo application built with React
 
-## ✨ Features
+## Live Demo
+ https://dibenpee.github.io/todo_taskbs
 
-- ✅ Add new todos
-- ✏️ Edit existing todos
-- ❌ Delete todos
-- 🔄 Toggle completion status
-- 💾 Local storage persistence
-- 🎨 Beautiful yellow color theme
-- 📱 Responsive design
+## Features
 
-## 🛠️ Built With
+- Add new tasks quickly with a simple input form
+- Edit existing tasks by clicking the edit button
+- Mark tasks as complete or incomplete with a checkbox
+- Delete tasks you no longer need
+- All tasks are automatically saved locally
 
-- **React 19.1.0** - UI framework
-- **Vite 6.3.5** - Build tool and dev server
-- **Tailwind CSS v4** - Styling
-- **React Icons** - Icon library
-- **Context API** - State management
+## How to Run Locally
 
-## 🚀 Getting Started
+1. Make sure you have Node.js installed on your computer
+2. Download or clone this project
+3. Open your terminal and navigate to the project folder
+4. Install the required packages:
+   ```
+   npm install
+   ```
+5. Start the development server:
+   ```
+   npm run dev
+   ```
+6. Open your browser and go to http://localhost:5173
 
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
+## Technology Used
 
-### Installation
+- React 19.1.0 for building the user interface
+- Vite for fast development and building
+- Tailwind CSS for styling
+- React Icons for the buttons
+- localStorage for saving your todos
 
-1. Clone the repository:
-```bash
-git clone https://github.com/Dibenpee/todo_taskbs.git
-cd todo_taskbs
+## Project Structure
+
+The app is organized into simple, easy-to-understand components:
+
+- AddTodo: The form where you type new tasks
+- TodoItem: Individual todo items with edit/delete buttons
+- TodoList: Container that shows all your todos
+- TodoContext: Manages all the todo data and functions
+
+## Building for Production
+
+To create a production-ready version:
+
 ```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-4. Open your browser and visit `http://localhost:5173`
-
-## 📦 Building for Production
-
-```bash
 npm run build
 ```
 
-This will create a `dist` folder with the production build.
-
-## 🌐 Deployment
-
-The app can be deployed to any static hosting service like:
-- Vercel
-- Netlify
-- GitHub Pages
-- Firebase Hosting
-
-## 📁 Project Structure
-
-```
-src/
-├── components/
-│   ├── AddTodo.jsx
-│   ├── TodoItem.jsx
-│   └── TodoList.jsx
-├── context/
-│   └── TodoContext.jsx
-├── App.jsx
-└── main.jsx
-```
-
-## 🎯 Features Overview
-
-- **Simple State Management**: Uses React Context API with useState and useEffect
-- **Persistent Storage**: Todos are saved to localStorage
-- **Clean UI**: Yellow color theme with intuitive interactions
-- **Keyboard Shortcuts**: Enter to save, Escape to cancel
-- **Character Limits**: 100 character limit for todos
-
-Built as part of BuilderSoft development task.
+This creates a dist folder with all the files ready for deployment.
