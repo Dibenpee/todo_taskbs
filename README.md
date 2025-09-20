@@ -1,12 +1,87 @@
-# React + Vite
+# Todo App - BuilderSoft Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and elegant todo application built with React and Vite.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Add new todos
+- ✏️ Edit existing todos
+- ❌ Delete todos
+- 🔄 Toggle completion status
+- 💾 Local storage persistence
+- 🎨 Beautiful yellow color theme
+- 📱 Responsive design
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19.1.0** - UI framework
+- **Vite 6.3.5** - Build tool and dev server
+- **Tailwind CSS v4** - Styling
+- **React Icons** - Icon library
+- **Context API** - State management
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Dibenpee/todo_taskbs.git
+cd todo_taskbs
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and visit `http://localhost:5173`
+
+## 📦 Building for Production
+
+```bash
+npm run build
+```
+
+This will create a `dist` folder with the production build.
+
+## 🌐 Deployment
+
+The app can be deployed to any static hosting service like:
+- Vercel
+- Netlify
+- GitHub Pages
+- Firebase Hosting
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── AddTodo.jsx
+│   ├── TodoItem.jsx
+│   └── TodoList.jsx
+├── context/
+│   └── TodoContext.jsx
+├── App.jsx
+└── main.jsx
+```
+
+## 🎯 Features Overview
+
+- **Simple State Management**: Uses React Context API with useState and useEffect
+- **Persistent Storage**: Todos are saved to localStorage
+- **Clean UI**: Yellow color theme with intuitive interactions
+- **Keyboard Shortcuts**: Enter to save, Escape to cancel
+- **Character Limits**: 100 character limit for todos
+
+Built as part of BuilderSoft development task.
